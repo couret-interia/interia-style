@@ -1,0 +1,21 @@
+<svg width="760" height="180" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="abg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d47a1"/>
+      <stop offset="100%" stop-color="#1e88e5"/>
+    </linearGradient>
+  </defs>
+  <rect width="760" height="180" fill="url(#abg)"/>
+  <circle cx="50%" cy="50%" r="40" fill="none" stroke="#bbdefb" stroke-width="2">
+    <animate attributeName="r" values="30;48;30" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0.9;0.1;0.9" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"
+        font-family="Liberation Sans, Arial" font-size="40" fill="white" font-weight="bold">
+    InterIA
+  </text>
+  <text x="50%" y="80%" text-anchor="middle"
+        font-family="Georgia" font-size="20" fill="#e3f2fd">
+    Mathematics × AI × Open Science
+  </text>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='240' height='32'>
+  <rect width='240' height='32' rx='6' fill='#0d47a1'/>
+  <text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle'
+        font-family='DejaVu Sans Mono' font-size='15' fill='white'>
+    InterIA • Math × AI
+  </text>
+</svg>

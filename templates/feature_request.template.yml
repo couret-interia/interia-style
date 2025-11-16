@@ -1,0 +1,10 @@
+name: Feature request
+description: Suggest an improvement for this InterIA template or a derived project
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: Idea
+      placeholder: Describe your idea and why it would help.
+    validations:
+      required: true

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>InterIA Design System v2.5 — Demo</title>
+  <!-- Adjust the path below if ui/ is not at the same level -->
+  <link rel="stylesheet" href="../css/interia.components.css">
+</head>
+<body>
+  <div class="ia-page">
+
+    <!-- Header -->
+    <header class="ia-header">
+      <div>
+        <div class="ia-header-logo">InterIA</div>
+        <div class="ia-header-tagline">Mathematics × AI × Open Science</div>
+      </div>
+      <nav class="ia-nav">
+        <a class="ia-btn ia-btn-ghost" href="#">Docs</a>
+        <a class="ia-btn ia-btn-primary" href="#">GitHub</a>
+      </nav>
+    </header>
+
+    <!-- Page title -->
+    <main>
+      <h1 class="ia-title">InterIA Design System v2.5</h1>
+      <p class="ia-subtitle">
+        A reusable UI kit for InterIA repositories: style, layout, cards, gallery,
+        math-lab overview, and multi-agent views.
+      </p>
+
+      <!-- SECTION 1: Intro / Alert -->
+      <section class="ia-section">
+        <h2 class="ia-section-title">🎛 Overview</h2>
+        <div class="ia-alert ia-alert-info">
+          <div class="ia-alert-icon">💬</div>
+          <div class="ia-alert-content">
+            This page is a <strong>demo</strong> for the InterIA UI design system (v2.5).
+            You can copy/paste the HTML fragments and reuse them in any InterIA-aligned
+            repository, using the CSS files in <code>ui/css/</code>.
+          </div>
+        </div>
+        <p>
+          The layout, typography, cards, alert boxes, gallery and grids below are all driven
+          by the shared CSS in <code>interia.tokens.css</code>, <code>interia.base.css</code>,
+          and <code>interia.components.css</code>.
+        </p>
+      </section>
+
+      <!-- SECTION 2: Cards -->
+      <section class="ia-section">
+        <h2 class="ia-section-title">📦 InterIA Repositories — Cards</h2>
+        <p class="ia-subtitle">
+          Cards are used to present repositories, modules, or important concepts in a compact,
+          visually consistent way.
+        </p>
+
+        <div class="ia-card-grid">
+          <!-- Card 1: interia-style -->
+          <article class="ia-card">
+            <div class="ia-card-title">interia-style</div>
+            <div class="ia-card-subtitle">Corporate Style & Templates</div>
+            <p>
+              Centralizes the InterIA <strong>STYLE_GUIDE</strong>, README templates,
+              banners, CI patterns, and recommended repository structures.
+            </p>
+            <div class="ia-card-footer">
+              Status: <span class="ia-pill">official</span>
+            </div>
+          </article>
+
+          <!-- Card 2: rh-analytic-framework-t1t4 -->
+          <article class="ia-card">
+            <div class="ia-card-title">rh-analytic-framework-t1t4</div>
+            <div class="ia-card-subtitle">T1′–T4 Analytic Framework</div>
+            <p>
+              Proof-only analytic framework built around Guinand–Weil, frame bounds,
+              wave-packet localization, and cross-positivity (T1′–T4).
+            </p>
+            <div class="ia-card-footer">
+              Status: <span class="ia-pill">framework</span>
+            </div>
+          </article>
+
+          <!-- Card 3: interia-math-lab -->
+          <article class="ia-card">
+            <div class="ia-card-title">interia-math-lab</div>
+            <div class="ia-card-subtitle">Exploratory Math Lab</div>
+            <p>
+              Jupyter notebooks, Δ₃(L) experiments, λ-invariant estimation,
+              zeta zeros statistics, and modular structure explorations.
+            </p>
+            <div class="ia-card-footer">
+              Status: <span class="ia-pill">lab</span>
+            </div>
+          </article>
+
+          <!-- Card 4: community -->
+          <article class="ia-card">
+            <div class="ia-card-title">community</div>
+            <div class="ia-card-subtitle">Discussions & Meta-Organization</div>
+            <p>
+              Public discussions, collaboration proposals, meta-design of the
+              InterIA ecosystem, and coordination between human and AI contributors.
+            </p>
+            <div class="ia-card-footer">
+              Status: <span class="ia-pill">community</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- SECTION 3: Proof / Results Gallery -->
+      <section class="ia-section">
+        <h2 class="ia-section-title">📚 Proof / Results Gallery</h2>
+        <p class="ia-subtitle">
+          A central hub for proofs, results, figures and notebooks — can be used on
+          GitHub Pages for each project.
+        </p>
+
+        <div class="ia-gallery-grid">
+          <div class="ia-gallery-item">
+            <strong>Δ₃(L) vs GUE</strong><br>
+            <small>Notebook: <code>01_delta3_first_experiments.ipynb</code></small><br>
+            Empirical comparison of Δ₃(L) with random matrix predictions (GUE).
+          </div>
+          <div class="ia-gallery-item">
+            <strong>λ-invariant estimation</strong><br>
+            <small>Notebook: <code>02_lambda_estimation.ipynb</code></small><br>
+            Measuring λ on prime gaps and modular residues, with error bars.
+          </div>
+          <div class="ia-gallery-item">
+            <strong>T1′–T4 dependency map</strong><br>
+            <small>Figure: <code>figures/t1t4_dependencies.png</code></small><br>
+            Visual graph of logical dependencies in the analytic framework.
+          </div>
+          <div class="ia-gallery-item">
+            <strong>Math Lab overview</strong><br>
+            <small>Page: <code>pages/index.html</code></small><br>
+            Landing page showing key notebooks, datasets, and result summaries.
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 4: Math Lab layout -->
+      <section class="ia-section">
+        <h2 class="ia-section-title">🔬 InterIA Math Lab Layout</h2>
+        <div class="ia-lab-layout">
+          <div>
+            <p class="ia-subtitle">
+              Layout for exploratory labs which might feed into formal frameworks
+              (like T1′–T4) once results are stabilized.
+            </p>
+
+            <div class="ia-card">
+              <div class="ia-card-title">Core notebooks</div>
+              <ul>
+                <li><code>01_delta3_first_experiments.ipynb</code></li>
+                <li><code>02_lambda_estimation_primes.ipynb</code></li>
+                <li><code>10_zeta_zeros_local_stats.ipynb</code></li>
+              </ul>
+            </div>
+
+            <div class="ia-card" style="margin-top: var(--ia-space-md);">
+              <div class="ia-card-title">Data layout</div>
+              <ul>
+                <li><code>data/raw/</code> — raw exports (LMFDB, CSV primes, etc.)</li>
+                <li><code>data/processed/</code> — derived / cleaned datasets</li>
+              </ul>
+            </div>
+          </div>
+          <aside>
+            <div class="ia-alert ia-alert-info">
+              <div class="ia-alert-icon">📊</div>
+              <div class="ia-alert-content">
+                Use the Math Lab layout for exploratory projects. Once patterns are stable,
+                they can be promoted to <code>src/</code> and documented in reports and
+                galleries.
+              </div>
+            </div>
+            <div class="ia-card">
+              <div class="ia-card-title">Reports</div>
+              <p>
+                Summaries can live in <code>reports/results_summary.md</code> and be
+                referenced from the gallery and README Hero.
+              </p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- SECTION 5: Multi-Agent cluster -->
+      <section class="ia-section">
+        <h2 class="ia-section-title">🧠 Multi-Agent InterIA Setup</h2>
+        <p class="ia-subtitle">
+          A conceptual example of how to present the multi-agent collaboration powering
+          the InterIA ecosystem.
+        </p>
+
+        <div class="ia-multiagent-cluster">
+          <div class="ia-agent-chip">
+            <div class="ia-agent-chip-name">ChatGPT</div>
+            <div class="ia-agent-chip-role">Coordinator · Architect</div>
+            <small>Designs pipelines, unifies style, centralizes reasoning.</small>
+          </div>
+          <div class="ia-agent-chip">
+            <div class="ia-agent-chip-name">Claude</div>
+            <div class="ia-agent-chip-role">Formal reasoning</div>
+            <small>Explores proof structures, checks logical consistency.</small>
+          </div>
+          <div class="ia-agent-chip">
+            <div class="ia-agent-chip-name">Gemini</div>
+            <div class="ia-agent-chip-role">Statistics & experiments</div>
+            <small>Runs Δ₃, λ, and zeta datasets analysis.</small>
+          </div>
+          <div class="ia-agent-chip">
+            <div class="ia-agent-chip-name">Mistral</div>
+            <div class="ia-agent-chip-role">Optimization & code</div>
+            <small>Optimizes implementations and numerical experiments.</small>
+          </div>
+          <div class="ia-agent-chip">
+            <div class="ia-agent-chip-name">Grok</div>
+            <div class="ia-agent-chip-role">Memory & logs</div>
+            <small>Maintains long-range logs, meta-notes, and evolution.</small>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <section class="ia-section">
+        <h2 class="ia-section-title">✅ How to reuse this page</h2>
+        <p>
+          This demo page combines the InterIA layout, cards, gallery, lab layout, and
+          multi-agent components. You can:
+        </p>
+        <ul>
+          <li>copy the CSS from <code>ui/css/</code> into your project,</li>
+          <li>use this HTML as a starting point for your own GitHub Pages,</li>
+          <li>adapt sections depending on whether the repo is a framework, lab, or meta-project.</li>
+        </ul>
+        <p>
+          For detailed rules, refer to <code>STYLE_GUIDE.md</code> and the InterIA design system
+          documentation in <code>interia-style</code>.
+        </p>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

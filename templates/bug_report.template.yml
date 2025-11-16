@@ -1,0 +1,10 @@
+name: Bug report
+description: Report a problem with this InterIA template or a derived project
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Problem description
+      placeholder: Explain what is happening and what you expected.
+    validations:
+      required: true

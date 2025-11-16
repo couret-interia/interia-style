@@ -1,0 +1,208 @@
+/* ui/css/interia.components.css */
+
+@import url("interia.base.css");
+
+/* HEADER / NAV */
+
+.ia-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--ia-space-md) 0;
+  margin-bottom: var(--ia-space-lg);
+}
+
+.ia-header-logo {
+  font-family: var(--ia-font-sans);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--ia-primary-dark);
+}
+
+.ia-header-tagline {
+  font-family: var(--ia-font-serif);
+  font-size: 0.95rem;
+  color: var(--ia-gray-700);
+}
+
+.ia-nav {
+  display: flex;
+  gap: var(--ia-space-md);
+  align-items: center;
+}
+
+/* Buttons */
+
+.ia-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 12px;
+  border-radius: var(--ia-radius-sm);
+  border: 1px solid transparent;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background var(--ia-transition-fast), color var(--ia-transition-fast), border var(--ia-transition-fast);
+}
+
+.ia-btn-primary {
+  background: var(--ia-primary);
+  color: white;
+  border-color: var(--ia-primary);
+}
+
+.ia-btn-primary:hover {
+  background: var(--ia-primary-dark);
+}
+
+.ia-btn-ghost {
+  background: transparent;
+  color: var(--ia-primary-dark);
+  border-color: var(--ia-primary-light);
+}
+
+.ia-btn-ghost:hover {
+  background: var(--ia-gray-100);
+}
+
+/* Pills */
+
+.ia-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  background: var(--ia-gray-100);
+  color: var(--ia-gray-700);
+}
+
+/* Cards */
+
+.ia-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--ia-space-lg);
+}
+
+.ia-card {
+  background: white;
+  border-radius: var(--ia-radius-md);
+  box-shadow: var(--ia-shadow-soft);
+  padding: var(--ia-space-lg);
+  border: 1px solid rgba(13,71,161,0.06);
+}
+
+.ia-card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: var(--ia-space-xs);
+  color: var(--ia-primary-dark);
+}
+
+.ia-card-subtitle {
+  font-size: 0.9rem;
+  color: var(--ia-gray-700);
+  margin-bottom: var(--ia-space-md);
+}
+
+.ia-card-footer {
+  font-size: 0.8rem;
+  color: var(--ia-gray-700);
+  margin-top: var(--ia-space-md);
+}
+
+/* Alert / Callout */
+
+.ia-alert {
+  border-radius: var(--ia-radius-md);
+  padding: var(--ia-space-md);
+  margin-bottom: var(--ia-space-lg);
+  display: flex;
+  gap: var(--ia-space-md);
+  align-items: flex-start;
+}
+
+.ia-alert-icon {
+  font-size: 1.3rem;
+}
+
+.ia-alert-content {
+  font-size: 0.9rem;
+}
+
+/* Variants */
+.ia-alert-info {
+  background: #e3f2fd;
+  border: 1px solid var(--ia-primary-light);
+  color: var(--ia-primary-dark);
+}
+
+.ia-alert-warning {
+  background: #fff8e1;
+  border: 1px solid var(--ia-warning);
+  color: #795548;
+}
+
+.ia-alert-success {
+  background: #e8f5e9;
+  border: 1px solid var(--ia-success);
+  color: var(--ia-success);
+}
+
+/* Gallery grid */
+
+.ia-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--ia-space-md);
+}
+
+.ia-gallery-item {
+  background: white;
+  border-radius: var(--ia-radius-md);
+  box-shadow: var(--ia-shadow-soft);
+  padding: var(--ia-space-md);
+  font-size: 0.85rem;
+}
+
+/* Lab layout */
+
+.ia-lab-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1.3fr);
+  gap: var(--ia-space-xl);
+}
+
+@media (max-width: 900px) {
+  .ia-lab-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Multi-agent cluster */
+
+.ia-multiagent-cluster {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: var(--ia-space-md);
+}
+
+.ia-agent-chip {
+  background: var(--ia-gray-100);
+  border-radius: var(--ia-radius-lg);
+  padding: var(--ia-space-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--ia-space-xs);
+}
+
+.ia-agent-chip-name {
+  font-weight: 600;
+  color: var(--ia-primary-dark);
+}
+
+.ia-agent-chip-role {
+  font-size: 0.8rem;
+  color: var(--ia-gray-700);
+}

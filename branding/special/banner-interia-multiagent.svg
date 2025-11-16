@@ -1,0 +1,35 @@
+<svg width="960" height="220" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgMA" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d47a1"></stop>
+      <stop offset="100%" stop-color="#004d40"></stop>
+    </linearGradient>
+  </defs>
+
+  <rect width="960" height="220" fill="url(#bgMA)"></rect>
+
+  <!-- nodes (agents) -->
+  <circle cx="200" cy="70" r="10" fill="#ffca28"></circle>
+  <circle cx="760" cy="70" r="10" fill="#ffca28"></circle>
+  <circle cx="260" cy="150" r="9" fill="#ffca28"></circle>
+  <circle cx="700" cy="150" r="9" fill="#ffca28"></circle>
+  <circle cx="480" cy="110" r="11" fill="#ffeb3b"></circle>
+
+  <!-- edges -->
+  <g stroke="#ffe082" stroke-width="1.5" opacity="0.8">
+    <line x1="200" y1="70" x2="480" y2="110"></line>
+    <line x1="760" y1="70" x2="480" y2="110"></line>
+    <line x1="260" y1="150" x2="480" y2="110"></line>
+    <line x1="700" y1="150" x2="480" y2="110"></line>
+    <line x1="260" y1="150" x2="200" y2="70"></line>
+    <line x1="700" y1="150" x2="760" y2="70"></line>
+  </g>
+
+  <text x="50%" y="44%" text-anchor="middle" font-family="Liberation Sans, Arial" font-size="40" fill="#e3f2fd" font-weight="bold">
+    InterIA — Multi-Agent Reasoning
+  </text>
+
+  <text x="50%" y="78%" text-anchor="middle" font-family="Consolas, monospace" font-size="18" fill="#e0f7fa">
+    ChatGPT · Claude · Gemini · Mistral · Grok · + Human Loop
+  </text>
+</svg>

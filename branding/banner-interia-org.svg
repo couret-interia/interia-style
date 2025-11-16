@@ -1,0 +1,22 @@
+<svg width="1300" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="orgbg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d47a1"/>
+      <stop offset="100%" stop-color="#42a5f5"/>
+    </linearGradient>
+    <radialGradient id="orGlow" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+  </defs>
+  <rect width="1300" height="300" fill="url(#orgbg2)"/>
+  <rect width="1300" height="300" fill="url(#orGlow)"/>
+  <text x="50%" y="46%" text-anchor="middle" font-weight="bold"
+        font-family="Liberation Sans, Arial" font-size="100" fill="white">
+      InterIA
+  </text>
+  <text x="50%" y="75%" text-anchor="middle"
+        font-family="Georgia" font-size="36" fill="#eaf3ff">
+      Mathematics × AI × Open Science
+  </text>
+</svg>

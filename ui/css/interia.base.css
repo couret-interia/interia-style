@@ -1,0 +1,88 @@
+/* ui/css/interia.base.css */
+
+@import url("interia.tokens.css");
+
+/* Light reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--ia-font-sans);
+  color: var(--ia-gray-900);
+  background-color: var(--ia-white);
+  line-height: 1.5;
+}
+
+/* Page container */
+
+.ia-page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: var(--ia-space-xl) var(--ia-space-lg);
+}
+
+@media (max-width: 768px) {
+  .ia-page {
+    padding: var(--ia-space-lg) var(--ia-space-md);
+  }
+}
+
+/* Headings */
+
+.ia-title {
+  font-family: var(--ia-font-sans);
+  font-size: 2rem;
+  margin-bottom: var(--ia-space-md);
+  color: var(--ia-primary-dark);
+}
+
+.ia-subtitle {
+  font-family: var(--ia-font-serif);
+  font-size: 1.1rem;
+  color: var(--ia-gray-700);
+  margin-bottom: var(--ia-space-xl);
+}
+
+/* Links */
+
+a {
+  color: var(--ia-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Code blocks */
+
+pre,
+code {
+  font-family: var(--ia-font-mono);
+}
+
+pre {
+  background: var(--ia-gray-100);
+  padding: var(--ia-space-md);
+  border-radius: var(--ia-radius-md);
+  overflow-x: auto;
+}
+
+/* Sections */
+
+.ia-section {
+  margin-bottom: var(--ia-space-xxl);
+}
+
+.ia-section-title {
+  font-size: 1.4rem;
+  margin-bottom: var(--ia-space-md);
+  color: var(--ia-primary-dark);
+  border-bottom: 1px solid var(--ia-gray-100);
+  padding-bottom: var(--ia-space-xs);
+}

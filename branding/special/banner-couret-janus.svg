@@ -1,0 +1,32 @@
+<svg width="980" height="240" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="janusBG" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1b1b1b"/>
+      <stop offset="50%" stop-color="#263238"/>
+      <stop offset="100%" stop-color="#1b1b1b"/>
+    </linearGradient>
+    <radialGradient id="janusGlow" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#ffeb3b" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="980" height="240" fill="url(#janusBG)"/>
+  <rect width="980" height="240" fill="url(#janusGlow)"/>
+
+  <!-- two semi-circles: Janus duality -->
+  <circle cx="360" cy="120" r="70" fill="none" stroke="#ffca28" stroke-width="2"/>
+  <circle cx="620" cy="120" r="70" fill="none" stroke="#ffca28" stroke-width="2"/>
+
+  <text x="50%" y="46%" text-anchor="middle"
+        font-family="Georgia, serif"
+        font-size="34" fill="#fffde7">
+    InterIA — Couret–Goldbach–Janus
+  </text>
+
+  <text x="50%" y="72%" text-anchor="middle"
+        font-family="Consolas, monospace"
+        font-size="18" fill="#ffecb3">
+    Mod 30 · Ranks · Δ₃ · λ ≈ 1/√7 · Asymmetry &amp; Resonance
+  </text>
+</svg>
