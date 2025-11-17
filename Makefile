@@ -6,7 +6,7 @@ PYTHON ?= python3
 .PHONY: check-versioning
 check-versioning:
 	@echo "🔎 Running InterIA versioning check..."
-	@$(PYTHON) tools/check_versioning.py --root . --ci
+	@$(PYTHON) tools/check_versioning.py
 
 # Optionnel : regrouper plusieurs checks dans une cible "lint"
 # Optional: group several checks in a “lint” target
