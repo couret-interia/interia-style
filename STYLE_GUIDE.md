@@ -105,7 +105,7 @@ Use this for `README_hero.md`:
 <p align="right">
   <a href="https://github.com/couret-interia/community/discussions"><img alt="💬 Discussion" src="https://img.shields.io/badge/💬-Discussion-1e88e5?labelColor=0d47a1"></a>
   <sup> · </sup>
-  <a href="https://github.com/couret-interia/<repo>/stargazers" target="_blank" title="Go to Github"><img alt="GitHub stars" src="https://img.shields.io/github/stars/couret-interia/<repo>.svg?style=social"></a>
+  <a href="https://github.com/couret-interia/<repo>/stargazers"><img alt="⭐" src="https://img.shields.io/github/stars/couret-interia/<repo>.svg?style=social"></a>
   <sup> · </sup>
   <a href="README_hero_FR.md"><sup>✨🇫🇷</sup></a>
   <sup> · </sup>
@@ -121,7 +121,7 @@ Use this for `README_hero_FR.md`:
 <p align="right">
   <a href="https://github.com/couret-interia/community/discussions"><img alt="💬 Discussion" src="https://img.shields.io/badge/💬-Discussion-1e88e5?labelColor=0d47a1"></a>
   <sup> · </sup>
-  <a href="https://github.com/couret-interia/<repo>/stargazers" target="_blank" title="Go to Github"><img alt="GitHub stars" src="https://img.shields.io/github/stars/couret-interia/<repo>.svg?style=social"></a>
+  <a href="https://github.com/couret-interia/<repo>/stargazers"><img alt="⭐" src="https://img.shields.io/github/stars/couret-interia/<repo>.svg?style=social"></a>
   <sup> · </sup>
   <a href="README_hero.md"><sup>✨🇬🇧</sup></a>
   <sup> · </sup>
@@ -260,13 +260,9 @@ This is a recommended skeleton for `README.md` in InterIA repositories.
 
 ````md
 <p align="right">
-  <a href="https://github.com/couret-interia/community/discussions">
-    <img alt="💬 Discussion" src="https://img.shields.io/badge/💬-Discussion-1e88e5?labelColor=0d47a1">
-  </a>
+  <a href="https://github.com/couret-interia/community/discussions"><img alt="💬 Discussion" src="https://img.shields.io/badge/💬-Discussion-1e88e5?labelColor=0d47a1"></a>
   <sup> · </sup>
-  <a href="https://github.com/couret-interia/<repo>/stargazers" target="_blank" title="Github">
-    <img alt="GitHub stars" src="https://img.shields.io/github/stars/couret-interia/<repo>.svg?style=social">
-  </a>
+  <a href="https://github.com/couret-interia/<repo>/stargazers"><img alt="⭐" src="https://img.shields.io/github/stars/couret-interia/<repo>.svg?style=social"></a>
   <sup> · </sup>
   <a href="README_hero.md"><sup>✨</sup></a>
   <sup> · </sup>
@@ -328,13 +324,9 @@ Provide a BibTeX entry (FR & EN variants if needed).
 
 ````md
 <p align="right">
-  <a href="https://github.com/couret-interia/community/discussions">
-    <img alt="💬 Discussion" src="https://img.shields.io/badge/💬-Discussion-1e88e5?labelColor=0d47a1">
-  </a>
+  <a href="https://github.com/couret-interia/community/discussions"><img alt="💬 Discussion" src="https://img.shields.io/badge/💬-Discussion-1e88e5?labelColor=0d47a1"></a>
   <sup> · </sup>
-  <a href="https://github.com/couret-interia/<repo>/stargazers" target="_blank" title="Github">
-    <img alt="GitHub stars" src="https://img.shields.io/github/stars/couret-interia/<repo>.svg?style=social">
-  </a>
+  <a href="https://github.com/couret-interia/<repo>/stargazers"><img alt="⭐" src="https://img.shields.io/github/stars/couret-interia/<repo>.svg?style=social"></a>
   <sup> · </sup>
   <a href="README_hero_FR.md"><sup>✨</sup></a>
   <sup> · </sup>
@@ -406,7 +398,7 @@ Hero READMEs are short, “cover-style” entry points with a more polished look
 <p align="right">
   <a href="https://github.com/couret-interia/community/discussions"><img alt="💬 Discussion" src="https://img.shields.io/badge/💬-Discussion-1e88e5?labelColor=0d47a1"></a>
   <sup> · </sup>
-  <a href="https://github.com/couret-interia/<repo>/stargazers" target="_blank" title="Go to Github"><img alt="GitHub stars" src="https://img.shields.io/github/stars/couret-interia/<repo>.svg?style=social"></a>
+  <a href="https://github.com/couret-interia/<repo>/stargazers"><img alt="⭐" src="https://img.shields.io/github/stars/couret-interia/<repo>.svg?style=social"></a>
   <sup> · </sup>
   <a href="README_hero_FR.md"><sup>✨🇫🇷</sup></a>
   <sup> · </sup>
@@ -448,7 +440,7 @@ Short explanation of what this hero page is (landing, public entry, etc.).
 <p align="right">
   <a href="https://github.com/couret-interia/community/discussions"><img alt="💬 Discussion" src="https://img.shields.io/badge/💬-Discussion-1e88e5?labelColor=0d47a1"></a>
   <sup> · </sup>
-  <a href="https://github.com/couret-interia/<repo>/stargazers" target="_blank" title="Go to Github"><img alt="GitHub stars" src="https://img.shields.io/github/stars/couret-interia/<repo>.svg?style=social"></a>
+  <a href="https://github.com/couret-interia/<repo>/stargazers"><img alt="⭐" src="https://img.shields.io/github/stars/couret-interia/<repo>.svg?style=social"></a>
   <sup> · </sup>
   <a href="README_hero.md"><sup>✨🇬🇧</sup></a>
   <sup> · </sup>
