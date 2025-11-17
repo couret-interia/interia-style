@@ -160,6 +160,96 @@ L'idée est :
 • Voir les deux chapitres Template README en mode `source` (il y a 4 \` afin d'éviter la brisure à la fin du bloc ```` ```bibtex ````).
 - 💡 Cherchez **markdown** dans les _extensions_ de votre navigateur (ou utilisez un **md viewer** en ligne).
 
+<details><summary>
+
+### 🛡️ Règle Anti-Casse Markdown InterIA
+
+</summary>
+
+Lorsqu’un bloc de code (```` ``` `````) doit contenir un autre bloc de code :
+
+1. Toujours utiliser un "délimiteur de code" (fence) externe **d’un niveau supérieur** :
+   - ````` ````md ````` pour l'extérieur
+   - ```` ```bash ```` pour l'intérieur
+2. Toujours fermer les blocs avec **la même séquence** qu’à l'ouverture.
+3. Si un contenu risque de casser le rendu, utiliser :
+   - soit les fences alternatifs `~~~`,
+   - soit l’indentation `    ` (4 espaces).
+
+Afin de garantir un rendu Markdown parfaitement stable (GitHub / GitLab / Pandoc / ChatGPT / IDE),
+toute inclusion d’un *bloc de code contenant un autre bloc de code* doit utiliser l’une des 3 méthodes suivantes.
+
+---
+
+### ✔️ 1) Méthode classique — Fence externe plus long
+
+````md
+```bash
+python script.py
+```
+````
+
+- Le bloc externe utilise cinq backticks (`````).
+- Le bloc interne en utilise trois (```).
+- Aucune collision n’est possible.
+
+⚠️ Certains éditeurs légers peuvent mal colorer,
+mais **le rendu HTML final sera correct**.
+
+---
+
+### ✔️ 2) Méthode alternative — Fences `~~~` (tildes)
+
+~~~md
+```bash
+python script.py
+```
+~~~
+
+- Les *tildes* sont reconnues par tous les moteurs modernes.
+- Elles permettent d’inclure des triple-backticks sans conflit.
+- ✔ Sûr **tant qu’il n’y a pas de `~~~` dans le code interne**.
+
+⚠️ Si le code interne contient **aussi** des `~~~`, cette méthode peut échouer.
+
+---
+
+### ✔️ 3) Méthode alternative — Indentation (4 espaces)
+
+```md
+    ```bash
+    python script.py
+    ```
+```
+
+- Indentation de **4 espaces** minimum.
+- Rendu garanti sur *toutes* les plateformes.
+- Moins élégant mais **infaillible** pour les contenus complexes.
+
+---
+
+### 🎯 Rappel important
+
+Certaines séquences comme :
+
+- \` \`\`\` \`
+- ou (```` ``` ````)
+
+ne doivent jamais apparaître **directement** dans un texte brut, car elles peuvent être interprétées comme début/fin d’un fence.
+
+Toujours utiliser l’un des échappements suivants :
+
+- entre fences externes :
+  (```` ``` ````)
+
+- ou en version échappée (sécurité maximale) :
+  (\\\`\\\`\\\`)
+
+Ces règles garantissent un rendu stable dans *tous* les cas
+(GitHub, GitLab, ChatGPT, Pandoc, Obsidian, VSCode…).
+
+</details>
+
 ---
 
 ## 🧩 4. Structure Canonique d’un README.md InterIA

@@ -160,6 +160,96 @@ The idea is:
 • See the two chapters of the Template README in `source` mode (there are 4 \` used to prevent breaking at the end of the block ```` ```bibtex ````).
 - 💡 Look for **markdown** in your _browser extensions_ (or use an **md viewer** online).
 
+<details><summary>
+
+### 🛡️ InterIA Anti-Break Markdown Rule
+
+</summary>
+
+When a code block (```` ``` `````) must contain another code block:
+
+1. Always use an external code *fence* with a **higher number of backticks**:
+   - ````` ````md ````` for the outer block
+   - ```` ```bash ```` for the inner block
+2. Always close the fences using **the exact same sequence** used at opening.
+3. If the content risks breaking the rendering, use:
+   - the alternative `~~~` fences,
+   - or indentation with `    ` (4 spaces).
+
+To guarantee perfectly stable Markdown rendering (GitHub / GitLab / Pandoc / ChatGPT / IDE),
+any *code block containing another code block* must use one of the 3 methods below.
+
+---
+
+### ✔️ 1) Classic method — Longer outer fence
+
+````md
+```bash
+python script.py
+```
+````
+
+- The outer block uses five backticks (`````).
+- The inner block uses three (```).
+- No collision is possible.
+
+⚠️ Some lightweight editors may mis-highlight it,
+but **the final HTML rendering will be correct**.
+
+---
+
+### ✔️ 2) Alternative method — `~~~` fences (tildes)
+
+~~~md
+```bash
+python script.py
+```
+~~~
+
+- *Tildes* are recognized by all modern Markdown engines.
+- They allow embedding triple backticks without conflict.
+- ✔ Safe **as long as the internal code does not contain `~~~`**.
+
+⚠️ If the internal code **also** contains `~~~`, this method may fail.
+
+---
+
+### ✔️ 3) Alternative method — Indentation (4 spaces)
+
+```md
+    ```bash
+    python script.py
+    ```
+```
+
+- Requires **at least 4 spaces** of indentation.
+- Works reliably on *all* platforms.
+- Less elegant, but **fool-proof** for complex content.
+
+---
+
+### 🎯 Important note
+
+Some sequences such as:
+
+- \` \`\`\` \`
+- or (```` ``` ````)
+
+must never appear **directly** in raw text, as they may be interpreted as the start/end of a fence.
+
+Always use one of the following escapes:
+
+- between outer fences:
+  (```` ``` ````)
+
+- or in escaped form (maximum safety):
+  (\\\`\\\`\\\`)
+
+These rules guarantee stable rendering in *every* environment
+(GitHub, GitLab, ChatGPT, Pandoc, Obsidian, VSCode…).
+
+</details>
+
 ---
 
 ## 🧩 4. Canonical Structure for README.md
