@@ -1,0 +1,6 @@
+# [FR] Fichiers / dossiers autorisés à contenir -vX.Y (patterns glob relatifs à la racine du dépôt).
+# [EN] Files/folders allowed to contain -vX.Y (glob patterns relative to the repository root).
+# Exemples / Examples
+# branding/logo-historique-v0.9.svg
+# frameworks/colors-experimental-v2.1.json
+# legacy/**/prototype-v1.0.*
