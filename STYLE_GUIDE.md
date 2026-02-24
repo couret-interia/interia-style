@@ -175,7 +175,7 @@ When a code block (```` ``` `````) must contain another code block:
 2. Always close the fences using **the exact same sequence** used at opening.
 3. If the content risks breaking the rendering, use:
    - the alternative `~~~` fences,
-   - or indentation with `    ` (4 spaces).
+   - or indentation with `    ` (4 spaces). <!-- markdownlint-disable-line no-space-in-code -->
 
 To guarantee perfectly stable Markdown rendering (GitHub / GitLab / Pandoc / ChatGPT / IDE),
 any *code block containing another code block* must use one of the 3 methods below.
