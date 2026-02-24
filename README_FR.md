@@ -29,7 +29,7 @@ C’est la **source de vérité** du style InterIA.
 
 ## 📘 Contenu du dépôt
 
-```
+```text
 
 interia-style/
 ├── STYLE_GUIDE.md / STYLE_GUIDE_FR.md

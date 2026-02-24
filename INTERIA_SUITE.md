@@ -300,7 +300,7 @@ jobs:
 
 ## 9. 🏗️ Structure d’un dépôt InterIA
 
-```
+```text
 <repo>/
  ├── README.md
  ├── README_FR.md

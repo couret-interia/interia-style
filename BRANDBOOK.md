@@ -214,7 +214,7 @@ Les bannières officielles existent en 3 niveaux :
 
 Tous définis dans :
 
-```
+```text
 ui/css/interia.tokens.css
 ui/css/interia.base.css
 ui/css/interia.components.css
@@ -256,7 +256,7 @@ Dans `ui/html/` :
 
 ### 7.1 Emplacement conseillé
 
-```
+```text
 interia-style/
  └── branding/
       ├── corporate/

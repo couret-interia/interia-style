@@ -40,7 +40,7 @@ Cela garantit que :
 
 **Exemples (obligatoire)** :
 
-```
+```text
 
 logo.svg             ← OK (version courante)
 script.js            ← OK
@@ -59,7 +59,7 @@ Pour conserver certaines versions utiles :
 
 Structure recommandée :
 
-```
+```text
 
 archives/
 ├── v1/
@@ -70,7 +70,7 @@ archives/
 
 Chaque version contient les fichiers en l’état :
 
-```
+```text
 
 archives/v1/main_arxiv-v1.0.0.tex
 archives/v1/Makefile-v1.2
@@ -98,7 +98,7 @@ Dans ce cas :
 
 Exemples :
 
-```
+```text
 
 branding/logo-historique-v0.9.svg
 frameworks/colors-experimental-v2.1.json
@@ -130,7 +130,7 @@ La version d’un dépôt InterIA doit **toujours être dans les tags Git**, jam
 
 Format officiel :
 
-```
+```text
 
 MAJOR.MINOR.PATCH
 
@@ -142,7 +142,7 @@ MAJOR.MINOR.PATCH
 
 Versions préliminaires :
 
-```
+```text
 
 1.0.0-alpha.1
 1.0.0-beta.2
@@ -192,7 +192,7 @@ explicitement via un fichier `.interia_versioning_allowlist` à la racine du dé
 
 Exemple :
 
-```txt
+```text
 # Fichiers / dossiers autorisés à contenir -vX.Y
 branding/logo-historique-v0.9.svg
 frameworks/colors-experimental-v2.1.json

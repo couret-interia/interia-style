@@ -40,7 +40,7 @@ Having a unified corporate style ensures that all InterIA projects — from proo
 
 ## 📘 What This Repository Contains
 
-```
+```text
 
 interia-style/
 ├── STYLE_GUIDE.md               # Main corporate style guide (EN)

@@ -39,7 +39,7 @@ This ensures:
 
 **Examples (mandatory):**
 
-```
+```text
 
 logo.svg            ← OK (current)
 script.js           ← OK
@@ -58,7 +58,7 @@ To preserve past versions when meaningful:
 
 Recommended structure:
 
-```
+```text
 
 archives/
 ├── v1/
@@ -69,7 +69,7 @@ archives/
 
 Example contents:
 
-```
+```text
 
 archives/v1/main_arxiv-v1.0.0.tex
 archives/v1/Makefile-v1.2
@@ -92,7 +92,7 @@ Some files are important enough to keep visible outside `/archives/`:
 
 These files may retain a version suffix:
 
-```
+```text
 
 branding/logo-historic-v0.9.svg
 frameworks/colors-experimental-v2.1.json
@@ -124,7 +124,7 @@ Repository versions must always be handled using Git tags, never filenames.
 
 Format:
 
-```
+```text
 
 MAJOR.MINOR.PATCH
 
@@ -132,7 +132,7 @@ MAJOR.MINOR.PATCH
 
 Example prereleases:
 
-```
+```text
 
 1.0.0-alpha.1
 1.0.0-beta.2
