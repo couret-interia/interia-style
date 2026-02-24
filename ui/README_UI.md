@@ -59,9 +59,9 @@ Minimal example:
 
 In practice:
 
-* place `ui/` at the root of your repository (or under `docs/` or `pages/`),
-* update the `<link rel="stylesheet" href="...">` path accordingly,
-* include the snippets from `ui/html/*.html` where you want to show UI components.
+- place `ui/` at the root of your repository (or under `docs/` or `pages/`),
+- update the `<link rel="stylesheet" href="...">` path accordingly,
+- include the snippets from `ui/html/*.html` where you want to show UI components.
 
 ---
 
@@ -71,9 +71,9 @@ In practice:
 
 Defined in `interia.base.css` and `interia.components.css`:
 
-* `.ia-page` — centered page layout
-* `.ia-title`, `.ia-subtitle` — page headings
-* `.ia-section`, `.ia-section-title` — section blocks
+- `.ia-page` — centered page layout
+- `.ia-title`, `.ia-subtitle` — page headings
+- `.ia-section`, `.ia-section-title` — section blocks
 
 See `html/layout_base.html` for a full example.
 
@@ -83,11 +83,11 @@ See `html/layout_base.html` for a full example.
 
 Defined in `interia.components.css`:
 
-* `.ia-card-grid` — responsive grid for cards
-* `.ia-card` — base card component
-* `.ia-card-title`, `.ia-card-subtitle`
-* `.ia-card-footer`
-* `.ia-pill` — small status pill
+- `.ia-card-grid` — responsive grid for cards
+- `.ia-card` — base card component
+- `.ia-card-title`, `.ia-card-subtitle`
+- `.ia-card-footer`
+- `.ia-pill` — small status pill
 
 See `html/component_cards.html`.
 
@@ -97,8 +97,8 @@ See `html/component_cards.html`.
 
 Classes:
 
-* `.ia-alert` + `.ia-alert-info|warning|success`
-* `.ia-alert-icon`, `.ia-alert-content`
+- `.ia-alert` + `.ia-alert-info|warning|success`
+- `.ia-alert-icon`, `.ia-alert-content`
 
 See `html/layout_base.html` for an example.
 
@@ -108,8 +108,8 @@ See `html/layout_base.html` for an example.
 
 Grid-style gallery for proofs, results, figures:
 
-* `.ia-gallery-grid`
-* `.ia-gallery-item`
+- `.ia-gallery-grid`
+- `.ia-gallery-item`
 
 See `html/component_gallery.html`.
 
@@ -119,8 +119,8 @@ See `html/component_gallery.html`.
 
 Two-column layout for a math lab overview:
 
-* `.ia-lab-layout` (responsive)
-* combines cards, alerts, lists
+- `.ia-lab-layout` (responsive)
+- combines cards, alerts, lists
 
 See `html/component_mathlab.html`.
 
@@ -130,9 +130,9 @@ See `html/component_mathlab.html`.
 
 For visualizing multi-agent setups:
 
-* `.ia-multiagent-cluster`
-* `.ia-agent-chip`
-* `.ia-agent-chip-name`, `.ia-agent-chip-role`
+- `.ia-multiagent-cluster`
+- `.ia-agent-chip`
+- `.ia-agent-chip-name`, `.ia-agent-chip-role`
 
 See `html/component_multiagent.html`.
 
@@ -159,8 +159,8 @@ If you want to adapt colors dynamically, you can extend `interia.tokens.css` usi
 
 ## 🤝 Contributing
 
-* Keep components **small, composable, and documented**.
-* Use tokens from `interia.tokens.css` (no hard-coded colors if possible).
-* Prefer semantic HTML and accessible structures.
+- Keep components **small, composable, and documented**.
+- Use tokens from `interia.tokens.css` (no hard-coded colors if possible).
+- Prefer semantic HTML and accessible structures.
 
 See the main `CONTRIBUTING.md` in `interia-style` for global rules.

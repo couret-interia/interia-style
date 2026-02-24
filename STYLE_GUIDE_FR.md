@@ -37,9 +37,9 @@ Il s’applique à :
 
 Il **ne s’applique pas** à :
 
-* `README_arxiv.md`
-* toutes sources LaTeX scientifiques (ex. `main_arxiv.tex`, `src/main_journal*.tex`)
-* annexes scientifiques
+- `README_arxiv.md`
+- toutes sources LaTeX scientifiques (ex. `main_arxiv.tex`, `src/main_journal*.tex`)
+- annexes scientifiques
 
 ---
 
@@ -59,7 +59,7 @@ Toujours **aligné à droite** et * Toujours les éléments dans l’ordre :
 1. 💬 Discussion badge (lien vers le GitHub Discussions)
 2. GitHub stars badge (pour le dépôt courant)
 3. ✨ lien vers la page Hero page du même language
-4.  Bascule de langue (FR ↔ EN)
+4. Bascule de langue (FR ↔ EN)
 
 - **Jamais** dans `README_arxiv.md`.
 - **Zéro espace** entre la balise`<a>` et `<img>` des badges (prévenir le soulignement).
@@ -154,11 +154,12 @@ L'idée est :
 
 ### ⚠️ **Blocs de codes** (```` ``` ````) dans un `bloc de code`
 
-> Généralement, le _texte/code_ est **encapsulé** par les fameux trois accents graves (`` ` ``) (backtick en anglais) ; \
+> Généralement, le *texte/code* est **encapsulé** par les fameux trois accents graves (`` ` ``) (backtick en anglais) ; \
 > Il suffit qu'il y ait un ou plusieurs blocs de code pour briser l'affichage HTML.
+
 - 💠 Pour éviter cela, **encapsulez** avec plus de \` que pour les **blocs de code à l'intérieur**. \
 • Voir les deux chapitres Template README en mode `source` (il y a 4 \` afin d'éviter la brisure à la fin du bloc ```` ```bibtex ````).
-- 💡 Cherchez **markdown** dans les _extensions_ de votre navigateur (ou utilisez un **md viewer** en ligne).
+- 💡 Cherchez **markdown** dans les *extensions* de votre navigateur (ou utilisez un **md viewer** en ligne).
 
 <details><summary>
 
@@ -503,15 +504,16 @@ Celles-ci doivent rester aussi neutres et minimales que possible afin de respect
 | `*`Emoji 💬     | invariant         | Identité InterIA (communication ouverte) |
 
 `*` Est le symbole canonique pour InterIA « discussion ouverte ».
+
 - Pas de branding agressif, pas de logos dans les PDF sauf si explicitement requis.
 
 ### Style LaTeX (optionnel)
 
 Pour les documents PDF, utiliser :
 
-* `\usepackage{libertinus}`
-* titres sobres
-* pas de logos colorés
+- `\usepackage{libertinus}`
+- titres sobres
+- pas de logos colorés
 
 ---
 
@@ -538,9 +540,9 @@ Elle devient la **source canonique** pour :
 
 Conventions CI :
 
-* `latex.yml` pour build PDF
-* `pages.yml` pour GitHub Pages
-* `linter.yml` optionnel pour Markdown
+- `latex.yml` pour build PDF
+- `pages.yml` pour GitHub Pages
+- `linter.yml` optionnel pour Markdown
 
 ---
 

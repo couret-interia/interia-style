@@ -1,4 +1,5 @@
 # 📦 Guide de Versioning InterIA (FR)
+
 **Organisation : `couret-interia` — Standard officiel**
 
 Ce guide définit les règles **communes à tous les dépôts** de l’organisation InterIA.
@@ -12,6 +13,7 @@ L’objectif est d’assurer une structure propre, stable, lisible, et compatibl
 la préservation historique **lorsqu’elle est utile**.
 
 Le dépôt doit rester :
+
 - clair,
 - stable dans ses imports,
 - simple à maintenir,
@@ -30,12 +32,14 @@ Les fichiers actifs, maintenus ou utilisés dans le projet **ne doivent jamais c
 - de dossiers versionnés (ex : `module-v3/`)
 
 Cela garantit que :
+
 - la version courante est toujours évidente,
 - les imports / includes ne changent jamais,
 - la CI/CD reste stable,
 - la structure est propre.
 
 **Exemples (obligatoire)** :
+
 ```
 
 logo.svg             ← OK (version courante)
@@ -50,9 +54,11 @@ README-v1.0.md       ← NON (à archiver)
 ## 2) 📁 Archives historiques (optionnel, contrôlé)
 
 Pour conserver certaines versions utiles :
+
 - créer un dossier `archives` **à la racine de chaque dépôt**.
 
 Structure recommandée :
+
 ```
 
 archives/
@@ -63,6 +69,7 @@ archives/
 ```
 
 Chaque version contient les fichiers en l’état :
+
 ```
 
 archives/v1/main_arxiv-v1.0.0.tex
@@ -78,6 +85,7 @@ archives/v1/scripts/make_arxiv-v1.0.sh
 ## 3) 🗝️ Fichiers “historiques pivots” autorisés
 
 Certains fichiers méritent de rester visibles dans les dossiers actifs :
+
 - concepts fondateurs,
 - brouillons graphiques importants,
 - styles expérimentaux,
@@ -89,6 +97,7 @@ Dans ce cas :
 ✔ ils doivent être clairement identifiés comme historiques
 
 Exemples :
+
 ```
 
 branding/logo-historique-v0.9.svg
@@ -102,6 +111,7 @@ frameworks/colors-experimental-v2.1.json
 
 Git assure déjà l’historique.
 Donc :
+
 - pas de `appendix-v3/`
 - pas de `images-v2/`
 - pas de `latex-v1.1/`
@@ -119,6 +129,7 @@ Donc :
 La version d’un dépôt InterIA doit **toujours être dans les tags Git**, jamais dans les noms de fichiers.
 
 Format officiel :
+
 ```
 
 MAJOR.MINOR.PATCH
@@ -130,6 +141,7 @@ MAJOR.MINOR.PATCH
 - PATCH → correction ou amélioration mineure
 
 Versions préliminaires :
+
 ```
 
 1.0.0-alpha.1
@@ -139,6 +151,7 @@ Versions préliminaires :
 ```
 
 Les tags Git doivent être utilisés pour :
+
 - releases GitHub,
 - packaging,
 - Zenodo DOI,
@@ -169,8 +182,8 @@ python tools/check_versioning.py --root .
 
 Retour :
 
-* code de sortie `0` → ✅ aucune violation détectée,
-* code de sortie `1` → ❌ au moins un fichier/dossier contient un motif interdit.
+- code de sortie `0` → ✅ aucune violation détectée,
+- code de sortie `1` → ❌ au moins un fichier/dossier contient un motif interdit.
 
 ## Allowlist : `.interia_versioning_allowlist`
 
@@ -219,4 +232,4 @@ jobs:
 Ainsi, **aucun nouveau fichier ou dossier** ne pourra être introduit avec un suffixe `-vX.Y`
 sans être explicitement autorisé.
 
-# 📎 Fin du document — Ce standard s’applique à *tous* les dépôts InterIA.
+# 📎 Fin du document — Ce standard s’applique à *tous* les dépôts InterIA

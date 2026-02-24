@@ -177,6 +177,7 @@ Page d'accueil minimale pour la **Galerie des Résultats** du laboratoire :
 - figures/thumbnails optionnels.
 
 Modèle d'URL :
+
 ```text
 https://couret-interia.github.io/interia-math-lab/#gallery
 ```

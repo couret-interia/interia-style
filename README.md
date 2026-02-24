@@ -117,6 +117,7 @@ These ensure **instant consistency** across all InterIA repos.
 `examples/` contains fully documented structures:
 
 ### **1. interia_v1.2_repo_structure.md**
+
 Complete layout for a “reference InterIA repository”:
 
 - clean READMEs (EN/FR/hero),
@@ -125,6 +126,7 @@ Complete layout for a “reference InterIA repository”:
 - and usage guidelines.
 
 ### **2. interia_math_lab_structure.md**
+
 Reference structure for an InterIA-compliant math lab:
 
 - notebooks (01_, 02_, 99_)
@@ -176,7 +178,7 @@ Choose a license based on your organizational needs (MIT recommended).
 
 Join the public InterIA discussions:
 
-👉 https://github.com/couret-interia/community/discussions
+👉 <https://github.com/couret-interia/community/discussions>
 
 We welcome ideas, improvements, and cross-project initiatives.
 

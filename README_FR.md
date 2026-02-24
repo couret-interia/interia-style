@@ -86,7 +86,7 @@ Les contributions doivent respecter les règles du STYLE_GUIDE.
 
 Discussions publiques, échanges, retours :
 
-👉 https://github.com/couret-interia/community/discussions
+👉 <https://github.com/couret-interia/community/discussions>
 
 ---
 

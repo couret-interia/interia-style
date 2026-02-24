@@ -1,4 +1,5 @@
 # 📦 InterIA Versioning Guide (EN)
+
 **Organization: `couret-interia` — Official Standard**
 
 This guide defines the **global rules** applied across all repositories in the InterIA ecosystem.
@@ -11,6 +12,7 @@ The goal is to keep repositories clean, stable, predictable and CI-friendly.
 Avoid the proliferation of `-vX.Y` suffixes while preserving useful historical material when needed.
 
 The structure must remain:
+
 - clean
 - stable for imports
 - easy to maintain
@@ -23,17 +25,20 @@ The structure must remain:
 ## 1) 🚫 **No version numbers in filenames or directory names (absolute rule)**
 
 Active or maintained files **must never include**:
+
 - suffixes like `-vX.Y`
 - prefixes like `vX.Y-`
 - versioned folders (e.g. `module-v3/`)
 
 This ensures:
+
 - the current version is always obvious
 - imports never break
 - CI remains stable
 - the repo stays clean
 
 **Examples (mandatory):**
+
 ```
 
 logo.svg            ← OK (current)
@@ -48,9 +53,11 @@ README-v1.0.md      ← NO (must go to archives)
 ## 2) 📁 Historical archives (optional, controlled)
 
 To preserve past versions when meaningful:
+
 - create an `archives` directory **at the root of the repository**.
 
 Recommended structure:
+
 ```
 
 archives/
@@ -61,6 +68,7 @@ archives/
 ```
 
 Example contents:
+
 ```
 
 archives/v1/main_arxiv-v1.0.0.tex
@@ -76,12 +84,14 @@ Use of `/archives/` is **exceptional**, never automatic.
 ## 3) 🗝️ Allowed “historical pivot files”
 
 Some files are important enough to keep visible outside `/archives/`:
+
 - early design concepts
 - key prototypes
 - important drafts
 - major experimental styles
 
 These files may retain a version suffix:
+
 ```
 
 branding/logo-historic-v0.9.svg
@@ -95,6 +105,7 @@ frameworks/colors-experimental-v2.1.json
 
 Git already tracks history.
 Avoid:
+
 - `appendix-v3/`
 - `images-v2/`
 - `latex-v1.1/`
@@ -112,6 +123,7 @@ Avoid:
 Repository versions must always be handled using Git tags, never filenames.
 
 Format:
+
 ```
 
 MAJOR.MINOR.PATCH
@@ -119,6 +131,7 @@ MAJOR.MINOR.PATCH
 ```
 
 Example prereleases:
+
 ```
 
 1.0.0-alpha.1
@@ -128,6 +141,7 @@ Example prereleases:
 ```
 
 Git tags are used for:
+
 - GitHub releases
 - Zenodo DOI
 - CITATION.cff
@@ -135,7 +149,6 @@ Git tags are used for:
 - CI/CD compatibility
 
 ---
-
 
 # 🔧 Automatic validation (InterIA script)
 
@@ -159,8 +172,8 @@ python tools/check_versioning.py --root .
 
 Exit code:
 
-* `0` → ✅ no violations detected
-* `1` → ❌ at least one file or directory name contains a forbidden pattern
+- `0` → ✅ no violations detected
+- `1` → ❌ at least one file or directory name contains a forbidden pattern
 
 ## Allowlist: `.interia_versioning_allowlist`
 
@@ -209,4 +222,4 @@ jobs:
 This ensures that **no new files or directories** using a `-vX.Y` suffix can be added
 without being explicitly whitelisted.
 
-# 📎 End of document — This standard applies to *all* InterIA repositories.
+# 📎 End of document — This standard applies to *all* InterIA repositories

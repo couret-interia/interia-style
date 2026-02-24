@@ -291,7 +291,7 @@ interia-style/
 
 # 9. 🔒 Usages interdits / interdits modérés
 
-### ❌ Ne pas :
+### ❌ Ne pas
 
 * appliquer l’identité graphique aux fichiers LaTeX scientifiques
 * changer la palette primaire
@@ -299,7 +299,7 @@ interia-style/
 * créer des variantes de bannières non conformes
 * employer trop d’effets (ombres trop fortes, fluo, arcs-en-ciel)
 
-### ⚠️ Mise en garde :
+### ⚠️ Mise en garde
 
 * Ne jamais insérer d’images ou de CSS dans `README_arxiv.md`
 * Les Hero FR/EN doivent toujours être **synchronisés**

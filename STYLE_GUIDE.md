@@ -154,11 +154,12 @@ The idea is:
 
 ### ⚠️ **Code Blocks** (```` ``` ````) Inside a `Code Block`
 
-> Generally, the _text/code_ is **encapsulated** by the famous three backticks (`` ` ``); \
+> Generally, the *text/code* is **encapsulated** by the famous three backticks (`` ` ``); \
 > Having one or more code blocks is enough to break the HTML display.
+
 - 💠 To avoid this, **encapsulate** with more \` than the **code blocks inside**. \
 • See the two chapters of the Template README in `source` mode (there are 4 \` used to prevent breaking at the end of the block ```` ```bibtex ````).
-- 💡 Look for **markdown** in your _browser extensions_ (or use an **md viewer** online).
+- 💡 Look for **markdown** in your *browser extensions* (or use an **md viewer** online).
 
 <details><summary>
 
@@ -503,15 +504,16 @@ These should remain as neutral and minimal as possible to match academic standar
 | `*`Emoji 💬      | invariant      | InterIA identity (open communication) |
 
 `*` Is the canonical symbol for InterIA “open discussion”.
+
 - No heavy branding, no logos in PDFs unless explicitly required.
 
 ### LaTeX style (optional)
 
 For PDF documents, use:
 
-* `\usepackage{libertinus}`
-* simple titles
-* no colored logos
+- `\usepackage{libertinus}`
+- simple titles
+- no colored logos
 
 ---
 
@@ -538,9 +540,9 @@ The Proof Gallery becomes the **canonical hub** for:
 
 Conventions CI :
 
-* `latex.yml` for build PDF
-* `pages.yml` for GitHub Pages
-* `linter.yml` optional for Markdown
+- `latex.yml` for build PDF
+- `pages.yml` for GitHub Pages
+- `linter.yml` optional for Markdown
 
 ---
 
