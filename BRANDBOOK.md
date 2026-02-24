@@ -1,6 +1,11 @@
 # 🏛️ **InterIA Brandbook v2.5**
 
-*Identity · Style · UI · Components · Repositories · Usage*
+*Identity
+· Style
+· UI
+· Components
+· Repositories
+· Usage*
 
 ---
 
@@ -54,7 +59,8 @@ Versions alternatives légitimes :
 
 Le symbole officiel InterIA est :
 
-**💬 Discussion**
+**💬
+Discussion**
 
 Il représente la collaboration, le dialogue mathématique, et les échanges humains–IA.
 
