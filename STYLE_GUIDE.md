@@ -201,11 +201,13 @@ but **the final HTML rendering will be correct**.
 
 ### ✔️ 2) Alternative method — `~~~` fences (tildes)
 
+<!-- markdownlint-disable code-fence-style -->
 ~~~md
 ```bash
 python script.py
 ```
 ~~~
+<!-- markdownlint-enable code-fence-style -->
 
 - *Tildes* are recognized by all modern Markdown engines.
 - They allow embedding triple backticks without conflict.
