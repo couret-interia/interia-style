@@ -7,11 +7,12 @@ utilisés dans les projets InterIA.
 Il définit la **charte graphique**, la cohérence esthétique, et les ressources
 communes pour l’ensemble de l’écosystème.
 
-### Structure
+### Architecture
 
 - `frameworks/` — Fondations transversales (couleurs, typos, grilles, icônes…)
 - `corporate/` — Identité institutionnelle officielle (logos, bannières, templates)
 - `labs/` — Espace créatif / expérimental (prototypage graphique)
+- `logos/` — Logos et favicon (svg)
 - `special/` — Assets exceptionnels (événements, archives, collaborations)
 
 ### Objectif
@@ -33,6 +34,7 @@ for the entire ecosystem.
 - `frameworks/` — Cross-project design foundations (colors, fonts, grids, icons…)
 - `corporate/` — Official institutional identity (logos, banners, templates)
 - `labs/` — Creative / experimental space (visual prototyping)
+- `logos/` — Logos and favicon (svg)
 - `special/` — Exceptional assets (events, archives, collaborations)
 
 ### Purpose
