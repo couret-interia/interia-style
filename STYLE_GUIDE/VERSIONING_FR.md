@@ -7,7 +7,7 @@ L’objectif est d’assurer une structure propre, stable, lisible, et compatibl
 
 ---
 
-# 🎯 Objectif
+## 🎯 Objectif
 
 Éviter la multiplication de fichiers et dossiers avec des suffixes `-vX.Y`, tout en permettant
 la préservation historique **lorsqu’elle est utile**.
@@ -21,9 +21,9 @@ Le dépôt doit rester :
 
 ---
 
-# 📐 Règles Officielles
+## 📐 Règles Officielles
 
-## 1) 🚫 **Aucun numéro de version dans les noms (règle absolue)**
+### 1) 🚫 **Aucun numéro de version dans les noms (règle absolue)**
 
 Les fichiers actifs, maintenus ou utilisés dans le projet **ne doivent jamais contenir** :
 
@@ -51,7 +51,7 @@ README-v1.0.md       ← NON (à archiver)
 
 ---
 
-## 2) 📁 Archives historiques (optionnel, contrôlé)
+### 2) 📁 Archives historiques (optionnel, contrôlé)
 
 Pour conserver certaines versions utiles :
 
@@ -82,7 +82,7 @@ archives/v1/scripts/make_arxiv-v1.0.sh
 
 ---
 
-## 3) 🗝️ Fichiers “historiques pivots” autorisés
+### 3) 🗝️ Fichiers “historiques pivots” autorisés
 
 Certains fichiers méritent de rester visibles dans les dossiers actifs :
 
@@ -107,7 +107,7 @@ frameworks/colors-experimental-v2.1.json
 
 ---
 
-## 4) 🚫 Ne jamais versionner les dossiers
+### 4) 🚫 Ne jamais versionner les dossiers
 
 Git assure déjà l’historique.
 Donc :
@@ -118,13 +118,13 @@ Donc :
 
 ---
 
-# ✔️ Résumé en une phrase
+## ✔️ Résumé en une phrase
 
 **Aucun fichier ou dossier actif ne doit contenir un suffixe `-vX.Y`; les anciennes versions vont dans `/archives/`, et seules quelques ressources historiques peuvent garder un suffixe.**
 
 ---
 
-# 💾 Numérotation des versions (tags Git)
+## 💾 Numérotation des versions (tags Git)
 
 La version d’un dépôt InterIA doit **toujours être dans les tags Git**, jamais dans les noms de fichiers.
 
@@ -160,7 +160,7 @@ Les tags Git doivent être utilisés pour :
 
 ---
 
-# 🔧 Validation automatique (script InterIA)
+## 🔧 Validation automatique (script InterIA)
 
 Pour garantir le respect de ces règles dans tous les dépôts `couret-interia`,
 un script de validation est fourni :
@@ -172,7 +172,7 @@ un script de validation est fourni :
   - certains dossiers techniques (`.git`, `.github`, `__pycache__`, etc.),
   - les chemins explicitement autorisés via une *allowlist*.
 
-## Usage en local
+### Usage en local
 
 Depuis la racine d’un dépôt :
 
@@ -185,7 +185,7 @@ Retour :
 - code de sortie `0` → ✅ aucune violation détectée,
 - code de sortie `1` → ❌ au moins un fichier/dossier contient un motif interdit.
 
-## Allowlist : `.interia_versioning_allowlist`
+### Allowlist : `.interia_versioning_allowlist`
 
 Pour quelques fichiers *historiques* jugés importants, il est possible de les autoriser
 explicitement via un fichier `.interia_versioning_allowlist` à la racine du dépôt.
@@ -201,7 +201,7 @@ legacy/**/prototype-v1.0.*
 
 Tout chemin non listé et contenant `-vX.Y` sera considéré comme une violation.
 
-## Intégration CI (GitHub Actions)
+### Intégration CI (GitHub Actions)
 
 Il est recommandé de brancher le script dans la CI de chaque dépôt :
 
@@ -232,4 +232,4 @@ jobs:
 Ainsi, **aucun nouveau fichier ou dossier** ne pourra être introduit avec un suffixe `-vX.Y`
 sans être explicitement autorisé.
 
-# 📎 Fin du document — Ce standard s’applique à *tous* les dépôts InterIA
+## 📎 Fin du document — Ce standard s’applique à *tous* les dépôts InterIA

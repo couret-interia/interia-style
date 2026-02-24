@@ -4,7 +4,7 @@
 
 ---
 
-# 1. ✨ Introduction
+## 1. ✨ Introduction
 
 Le **Brandbook InterIA v2.5** est la référence organisationnelle qui définit :
 
@@ -26,11 +26,11 @@ Ce document est destiné à :
 
 ---
 
-# 2. 🎨 Identité Visuelle
+## 2. 🎨 Identité Visuelle
 
 ---
 
-## 2.1 Nom et philosophie
+### 2.1 Nom et philosophie
 
 **InterIA**
 → “Inter” (collaboration, interdisciplinarité)
@@ -39,7 +39,7 @@ Ce document est destiné à :
 
 ---
 
-## 2.2 Slogan officiel
+### 2.2 Slogan officiel
 
 > **Mathematics × AI × Open Science**
 
@@ -50,7 +50,7 @@ Versions alternatives légitimes :
 
 ---
 
-## 2.3 Emoji signature
+### 2.3 Emoji signature
 
 Le symbole officiel InterIA est :
 
@@ -60,11 +60,11 @@ Il représente la collaboration, le dialogue mathématique, et les échanges hum
 
 ---
 
-# 3. 🎨 Palette Officielle InterIA v2.5
+## 3. 🎨 Palette Officielle InterIA v2.5
 
 ---
 
-## 3.1 Palette institutionnelle (Core)
+### 3.1 Palette institutionnelle (Core)
 
 | Nom                      | Hex       |
 | ------------------------ | --------- |
@@ -79,7 +79,7 @@ Il représente la collaboration, le dialogue mathématique, et les échanges hum
 
 ---
 
-## 3.2 Palette Math Lab (Spectral)
+### 3.2 Palette Math Lab (Spectral)
 
 | Nom            | Hex       |
 | -------------- | --------- |
@@ -96,7 +96,7 @@ Usage :
 
 ---
 
-## 3.3 Palette T1′–T4 (Analytic Framework)
+### 3.3 Palette T1′–T4 (Analytic Framework)
 
 | Nom     | Hex       |
 | ------- | --------- |
@@ -112,17 +112,17 @@ Usage :
 
 ---
 
-## 3.4 Dark / Light Mode (Auto)
+### 3.4 Dark / Light Mode (Auto)
 
 Le Design System v2.5 supporte :
 
-### Light
+#### Light
 
 * Background : `#ffffff`
 * Texte : `#0d47a1`
 * Sous-texte : `#455a64`
 
-### Dark
+#### Dark
 
 * Background : `#0d47a1` → `#001f33`
 * Texte : `#ffffff`
@@ -130,32 +130,32 @@ Le Design System v2.5 supporte :
 
 ---
 
-# 4. ✒ Typographies
+## 4. ✒ Typographies
 
 ---
 
-## 4.1 Titres (bannières, Hero)
+### 4.1 Titres (bannières, Hero)
 
 **Liberation Sans**, Arial
 → moderne, lisible, institutionnel
 
 ---
 
-## 4.2 Sous-titres (Hero, slogans)
+### 4.2 Sous-titres (Hero, slogans)
 
 **Georgia**, serif
 → élégant, parfait pour sous-titres en contraste
 
 ---
 
-## 4.3 Corps de texte
+### 4.3 Corps de texte
 
 **Inter (variable)** ou **Liberation Sans**
 → lisibilité optimale dans GitHub et Docs
 
 ---
 
-## 4.4 Technique
+### 4.4 Technique
 
 **Consolas** ou **DejaVu Sans Mono**
 → Notebooks math-lab
@@ -164,25 +164,25 @@ Le Design System v2.5 supporte :
 
 ---
 
-# 5. 📘 Structure de marque (Brand Architecture)
+## 5. 📘 Structure de marque (Brand Architecture)
 
 ---
 
-## 5.1 Logos et bannières
+### 5.1 Logos et bannières
 
 Les bannières officielles existent en 3 niveaux :
 
-### Niveau 1 : Corporate (identité principale)
+#### Niveau 1 : Corporate (identité principale)
 
 * `banner-interia-v1.1.svg`
 * `banner-interia-auto-v1.1.svg`
 
-### Niveau 2 : Projets techniques
+#### Niveau 2 : Projets techniques
 
 * `banner-mathlab-v1.1.svg`
 * `banner-t1t4-v1.1.svg`
 
-### Niveau 3 : Spécial (édition artistique / thématique)
+#### Niveau 3 : Spécial (édition artistique / thématique)
 
 * Noir & Or
 * Minimal
@@ -192,16 +192,16 @@ Les bannières officielles existent en 3 niveaux :
 
 ---
 
-## 5.2 Règles d’usage
+### 5.2 Règles d’usage
 
-### Toujours autorisé
+#### Toujours autorisé
 
 * Dans `README.md`
 * Dans `README_hero.md`
 * Dans GitHub Pages
 * Dans Slides / PDF scientifiques
 
-### Jamais autorisé
+#### Jamais autorisé
 
 * Dans `README_arxiv.md`
 * Dans `main_arxiv.tex`
@@ -210,7 +210,7 @@ Les bannières officielles existent en 3 niveaux :
 
 ---
 
-# 6. 🏗 UI Components v2.5
+## 6. 🏗 UI Components v2.5
 
 Tous définis dans :
 
@@ -222,7 +222,7 @@ ui/css/interia.components.css
 
 ---
 
-## 6.1 Composants disponibles
+### 6.1 Composants disponibles
 
 * **Layout de page** (`.ia-page`)
 * **Titres** (`.ia-title`, `.ia-subtitle`)
@@ -237,7 +237,7 @@ ui/css/interia.components.css
 
 ---
 
-## 6.2 Exemples inclus
+### 6.2 Exemples inclus
 
 Dans `ui/html/` :
 
@@ -250,11 +250,11 @@ Dans `ui/html/` :
 
 ---
 
-# 7. 🖼 Bannières & Assets
+## 7. 🖼 Bannières & Assets
 
 ---
 
-## 7.1 Emplacement conseillé
+### 7.1 Emplacement conseillé
 
 ```
 interia-style/
@@ -267,7 +267,7 @@ interia-style/
 
 ---
 
-## 7.2 Recommandations d’usage
+### 7.2 Recommandations d’usage
 
 * Toujours une bannière en haut d’un README Hero
 * Jamais dans un article académique
@@ -276,11 +276,11 @@ interia-style/
 
 ---
 
-# 8. 📚 Documentation & Repositories
+## 8. 📚 Documentation & Repositories
 
 ---
 
-## 8.1 Repos clés InterIA
+### 8.1 Repos clés InterIA
 
 * **interia-style** — style, templates, UI, branding
 * **interia-math-lab** — explorations analytiques
@@ -289,7 +289,7 @@ interia-style/
 
 ---
 
-# 9. 🔒 Usages interdits / interdits modérés
+## 9. 🔒 Usages interdits / interdits modérés
 
 ### ❌ Ne pas
 
@@ -307,7 +307,7 @@ interia-style/
 
 ---
 
-# 10. 🚀 Mise en œuvre dans un nouveau dépôt
+## 10. 🚀 Mise en œuvre dans un nouveau dépôt
 
 1. Cloner ou copier le squelette InterIA v1.2 ou Math Lab
 2. Ajouter `branding/` si nécessaire
@@ -320,7 +320,7 @@ interia-style/
 
 ---
 
-# 11. 📦 Versions & Releases
+## 11. 📦 Versions & Releases
 
 ### v1.0 — Badge + README
 
@@ -334,14 +334,14 @@ interia-style/
 
 ---
 
-# 12. 📄 Licence
+## 12. 📄 Licence
 
 L’identité visuelle InterIA est libre d’usage **dans l’écosystème InterIA**
 et sous licence MIT pour les templates.
 
 ---
 
-# 13. 💬 Contact
+## 13. 💬 Contact
 
 👉 [https://github.com/couret-interia/community/discussions](https://github.com/couret-interia/community/discussions)
 

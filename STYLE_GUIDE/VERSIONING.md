@@ -7,7 +7,7 @@ The goal is to keep repositories clean, stable, predictable and CI-friendly.
 
 ---
 
-# 🎯 Objective
+## 🎯 Objective
 
 Avoid the proliferation of `-vX.Y` suffixes while preserving useful historical material when needed.
 
@@ -20,9 +20,9 @@ The structure must remain:
 
 ---
 
-# 📐 Official Rules
+## 📐 Official Rules
 
-## 1) 🚫 **No version numbers in filenames or directory names (absolute rule)**
+### 1) 🚫 **No version numbers in filenames or directory names (absolute rule)**
 
 Active or maintained files **must never include**:
 
@@ -50,7 +50,7 @@ README-v1.0.md      ← NO (must go to archives)
 
 ---
 
-## 2) 📁 Historical archives (optional, controlled)
+### 2) 📁 Historical archives (optional, controlled)
 
 To preserve past versions when meaningful:
 
@@ -81,7 +81,7 @@ Use of `/archives/` is **exceptional**, never automatic.
 
 ---
 
-## 3) 🗝️ Allowed “historical pivot files”
+### 3) 🗝️ Allowed “historical pivot files”
 
 Some files are important enough to keep visible outside `/archives/`:
 
@@ -101,7 +101,7 @@ frameworks/colors-experimental-v2.1.json
 
 ---
 
-## 4) 🚫 Never version directories
+### 4) 🚫 Never version directories
 
 Git already tracks history.
 Avoid:
@@ -112,13 +112,13 @@ Avoid:
 
 ---
 
-# ✔️ Summary in one sentence
+## ✔️ Summary in one sentence
 
 **No active file or folder may contain a `-vX.Y` suffix; old versions belong in `/archives/`, and only a few historical resources may retain version numbers.**
 
 ---
 
-# 💾 Repository version numbers (Git tags only)
+## 💾 Repository version numbers (Git tags only)
 
 Repository versions must always be handled using Git tags, never filenames.
 
@@ -150,7 +150,7 @@ Git tags are used for:
 
 ---
 
-# 🔧 Automatic validation (InterIA script)
+## 🔧 Automatic validation (InterIA script)
 
 To enforce these rules consistently across all `couret-interia` repositories,
 a dedicated validator script is provided:
@@ -162,7 +162,7 @@ a dedicated validator script is provided:
   - technical directories (`.git`, `.github`, `__pycache__`, etc.),
   - explicitly allowed paths via an *allowlist*.
 
-## Local usage
+### Local usage
 
 From the repository root:
 
@@ -175,7 +175,7 @@ Exit code:
 - `0` → ✅ no violations detected
 - `1` → ❌ at least one file or directory name contains a forbidden pattern
 
-## Allowlist: `.interia_versioning_allowlist`
+### Allowlist: `.interia_versioning_allowlist`
 
 For a few important *historical* files, you may explicitly allow them via an
 `.interia_versioning_allowlist` file at the repository root.
@@ -191,7 +191,7 @@ legacy/**/prototype-v1.0.*
 
 Any path not listed and containing `-vX.Y` will be treated as a violation.
 
-## CI Integration (GitHub Actions)
+### CI Integration (GitHub Actions)
 
 It is recommended to plug the script into each repository’s CI:
 
@@ -222,4 +222,4 @@ jobs:
 This ensures that **no new files or directories** using a `-vX.Y` suffix can be added
 without being explicitly whitelisted.
 
-# 📎 End of document — This standard applies to *all* InterIA repositories
+## 📎 End of document — This standard applies to *all* InterIA repositories
