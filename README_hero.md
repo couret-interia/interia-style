@@ -1,3 +1,5 @@
+> **Documentation raccordée au portefeuille actuel — 1 October 2026.** This repository provides supporting tools, templates or community material. Passing software checks is not a mathematical proof of RH or a validation of a general scientific claim. Current bounded publications and permanent identifiers: [CURRENT_STATUS.md](CURRENT_STATUS.md) · [Couret–Unification](https://www.couretunification.fr/publications-et-depots/).
+
 <p align="right">
   <a href="https://github.com/couret-interia/community/discussions"><img alt="💬 Discussion" src="https://img.shields.io/badge/💬-Discussion-1e88e5?labelColor=0d47a1"></a>
   <sup> · </sup>
